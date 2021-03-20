@@ -1,5 +1,5 @@
 # Revisit Ames House Prices with Deep Learning Model
-*The repository is a inspired by the assignment in online course courses.d2l.ai* 
+*The repository is my solution to the assignment in online course courses.d2l.ai* 
 
 #### by [Siwei Ma](https://www.linkedin.com/in/siwei-ma-28345856/)
 
