@@ -64,8 +64,10 @@ def log_rmse(net, loss, X, y):
     if isinstance(net, torch.nn.Module):
         net.eval()
 
-    clipped_preds = torch.clamp(net(X), 1, float('inf'))
-    rmse = torch.sqrt(loss(torch.log(clipped_preds), torch.log(y)))
+    with torch.no_grad():
+        clipped_preds = torch.clamp(net(X), 1, float('inf'))
+        rmse = torch.sqrt(loss(torch.log(clipped_preds), torch.log(y)))
+        
     return rmse.item()
 
 
