@@ -3,6 +3,6 @@
 
 #### by [Siwei Ma](https://www.linkedin.com/in/siwei-ma-28345856/)
 
-# Executive Summary
+## Summary
 
-Given [Ames Housing dataset](http://jse.amstat.org/v19n3/decock.pdf), the project started with an exploratory data analysis (EDA) to identify the missing values, suspicious data, and redundant variables. Then I performed a mixed stepwise selection to reduce the set of variables and select the best model based on AIC, BIC, and adjust R-squared. With the best model selected, the model assumptions were checked regarding normality, homoscedasticity, collinearity, and linearity between response and predictors. Several solutions were proposed to solve the assumption violation. The model was then tested on unseen data and scored on Root-Mean-Squared-Error (RMSE).
+I have done the [Ames House Prices project](https://github.com/SiweiMa/Ames-House-Prices-Multiple-Linear-Regression-Project-in-Python) before with multiple linear regression using statsmodels api. Here I revisited the project with deep learning model using Pytorch. The neural network with one hidden layer includes ReLu as activation function and dropout aiming for a simpler model. The training process relies on the Adam optimizer with mini batching. The performance of the model was evaluated by log RMSE through k-fold cross validation. The final RMSE of the deep learning model is quite similar with one of the multiple linear regression model with feature engineering/selection. 
